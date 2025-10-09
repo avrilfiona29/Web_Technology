@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Chronicle - SMVITM</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5dc; /* beige background */
+      color: #333;
+    }
+
+    /* Header with logo and name */
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #b22222;
+      color: white;
+      padding: 15px 30px;
+      flex-wrap: wrap;
+    }
+
+    .college-info {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .college-info img {
+      height: 60px;
+      width: auto;
+    }
+
+    .college-name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .newspaper-title {
+      text-align: right;
+    }
+
+    .newspaper-title h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .newspaper-title h3 {
+      margin: 5px 0 0;
+      font-size: 16px;
+    }
+
+    nav {
+      text-align: center;
+      background-color: #8b0000;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    main {
+      margin-top: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .section1, .section2 {
+      background-color: #fff5e1;
+      padding: 15px;
+      border-radius: 5px;
+      border-left: 5px solid #b22222;
+    }
+
+    figure {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    figure img {
+      width: 80%;
+      max-width: 600px;
+      border: 2px solid #b22222;
+      border-radius: 5px;
+    }
+
+    figcaption {
+      font-style: italic;
+      font-size: 14px;
+      margin-top: 5px;
+      color: #555;
+    }
+
+    aside {
+      background-color: #ffe4e1;
+      padding: 15px;
+      border-left: 5px solid #8b0000;
+      border-radius: 5px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #8b0000;
+      padding: 10px;
+      text-align: center;
+      background-color: #fffaf0;
+    }
+
+    th {
+      background-color: #fa8072;
+      color: white;
+    }
+
+    footer {
+      text-align: center;
+      background-color: #b22222;
+      color: white;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="college-info">
+    <!-- Replace this src with your actual logo path -->
+    <img src="C:\Users\Lab6\Desktop\4MW23CS021\SMVITM-Logo-1024x990.jpg" alt="SMVITM Logo">
+    <div class="college-name">SMVITM</div>
+  </div>
+  <div class="newspaper-title">
+    <h1>College Chronicle</h1>
+    <h3>Your source for the latest campus updates</h3>
+  </div>
+</header>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#">Campus</a>
+  <a href="#">Technology</a>
+  <a href="#">Sports</a>
+  <a href="#">Culture</a>
+</nav>
+
+<main>
+  <section>
+    <article class="section1">
+      <h2>📡 Breaking News: Campus Tech Innovations</h2>
+      <p>SMVITM recently unveiled a new AI-powered research lab that’s drawing attention from institutions nationwide. The lab helps students gain hands-on experience in robotics, data science, and machine learning.</p>
+    </article>
+
+    <figure>
+      <img src="C:\Users\Lab6\Desktop\4MW23CS021\techv_ai_lab.jpg" alt="Tech Lab">
+      <figcaption>Image: Inauguration of the new AI Research Lab at SMVITM</figcaption>
+    </figure>
+
+    <article class="section2">
+      <h2>💪 Health: Tips for a Better Student Life</h2>
+      <p>Balancing academics, clubs, and health can be hard. Tips: Stay hydrated, sleep at least 7 hours, take active study breaks, and avoid junk food during exams.</p>
+    </article>
+
+    <figure>
+      <img src="C:\Users\Lab6\Desktop\4MW23CS021\Wellness.jpg" alt="Student Health">
+      <figcaption>Image: SMVITM students during the campus wellness program</figcaption>
+    </figure>
+  </section>
+
+  <section>
+    <aside>
+      <h2>📢 Advertisement</h2>
+      <p>Visit Café Bean near the east gate! Show your SMVITM ID and get 10% off. Try the caramel latte and smoothie bowls!</p>
+      <img src="C:\Users\Lab6\Desktop\4MW23CS021\169327_2hvmnseu6dtytnzpuxist2kii.jpg" alt="Cafe Bean" style="width:100%; margin-top:10px; border-radius:5px;">
+    </aside>
+
+    <article>
+      <h3 style="text-align:center">🏏 Latest Sports Scores</h3>
+      <table>
+        <tr>
+          <th>Team</th>
+          <th>Score</th>
+          <th>Opponent</th>
+        </tr>
+        <tr>
+          <td>Engineering XI</td>
+          <td>98</td>
+          <td>Science Stars</td>
+        </tr>
+        <tr>
+          <td>Science Stars</td>
+          <td>88</td>
+          <td>Commerce Champs</td>
+        </tr>
+        <tr>
+          <td>Commerce Champs</td>
+          <td>73</td>
+          <td>Engineering XI</td>
+        </tr>
+      </table>
+    </article>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 College Chronicle, SMVITM. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
