@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>College Event Registration Form</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f4f4f4;
+			margin: 20px;
+		}
+		h1 {
+			text-align: center;
+			color: #333;
+			font-size: 32px;
+			margin-bottom: 20px;
+		}
+		table {
+			width: 70%;
+			margin: 0 auto;
+			background-color: #fff;
+			border-collapse: collapse;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		td, th {
+			padding: 15px;
+			font-size: 18px;
+			color: #555;
+		}
+		th {
+			text-align: left;
+			background-color: #4CAF50;
+			color: white;
+			font-size: 20px;
+		}
+		input[type="text"],
+		input[type="email"],
+		input[type="password"],
+		select,
+		textarea {
+			width: 100%;
+			padding: 10px;
+			font-size: 16px;
+			border: 1px solid #ccc;
+			border-radius: 4px;
+		}
+		input[type="submit"],
+		input[type="reset"] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+			font-size: 18px;
+		}
+		input[type="submit"]:hover,
+		input[type="reset"]:hover {
+			background-color: #45a049;
+		}
+		textarea {
+			resize: vertical;
+			height: 100px;
+		}
+		.radio, .checkbox {
+			width: auto;
+		}
+	</style>
+</head>
+<body>
+	<h1>College Event Registration Form</h1>
+	<form action="#" method="post">
+		<table>
+			<tr>
+				<th colspan="2">Personal Information</th>
+			</tr>
+			<tr>
+				<td>First Name:</td>
+				<td><input type="text" name="firstname" placeholder="Enter your first name" required></td>
+			</tr>
+			<tr>
+				<td>Last Name:</td>
+				<td><input type="text" name="lastname" placeholder="Enter your last name" required></td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><input type="email" name="email" placeholder="Enter your email" required></td>
+			</tr>
+			<tr>
+				<td>Gender:</td>
+				<td>
+					<input type="radio" name="gender" value="Male" class="radio"> Male
+					<input type="radio" name="gender" value="Female" class="radio"> Female
+					<input type="radio" name="gender" value="Other" class="radio"> Other
+				</td>
+			</tr>
+
+			<tr>
+				<th colspan="2">College Details</th>
+			</tr>
+			<tr>
+				<td>College Name:</td>
+				<td><input type="text" name="college" placeholder="Enter your college name" required></td>
+			</tr>
+			<tr>
+				<td>Department:</td>
+				<td>
+					<select name="department" required>
+						<option value="">Select Department</option>
+						<option value="CSE">Computer Science & Engineering</option>
+						<option value="ECE">Electronics & Communication</option>
+						<option value="EEE">Electrical & Electronics</option>
+						<option value="ME">Mechanical</option>
+						<option value="CE">Civil</option>
+					
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Year of Study:</td>
+				<td>
+					<select name="year" required>
+						<option value="">Select Year</option>
+						<option value="1st Year">1st Year</option>
+						<option value="2nd Year">2nd Year</option>
+						<option value="3rd Year">3rd Year</option>
+						<option value="4th Year">4th Year</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>USN:</td>
+				<td><input type="text" name="studentid" placeholder="Enter your USN" required></td>
+			</tr>
+
+			<tr>
+				<th colspan="2">Event Details</th>
+			</tr>
+			<tr>
+				<td>Select Event:</td>
+				<td>
+					<select name="event" required>
+						<option value="">Select Event</option>
+						<option value="coding">Coding Contest</option>
+						<option value="quiz">Tech Quiz</option>
+						<option value="paper_presentation">Paper Presentation</option>
+						<option value="project_expo">Project Expo</option>
+						<option value="sports">Sports Meet</option>
+						<option value="cultural">Cultural Fest</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Participation Type:</td>
+				<td>
+					<input type="radio" name="type" value="Individual" class="radio"> Individual
+					<input type="radio" name="type" value="Team" class="radio"> Team
+				</td>
+			</tr>
+			<tr>
+				<td>Additional Comments:</td>
+				<td><textarea name="comments" placeholder="Any special requirements or notes..."></textarea></td>
+			</tr>
+
+			<tr>
+				<td colspan="2" style="text-align:center;">
+					<input type="submit" value="Register">
+					<input type="reset" value="Reset">
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
